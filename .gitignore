@@ -1,0 +1,13 @@
+# Virtual environment (do NOT upload to GitHub)
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Raw data
+data/raw/*
+!data/raw/.gitkeep
+
+# Notebook checkpoints
+.ipynb_checkpoints/
