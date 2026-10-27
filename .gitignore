@@ -12,5 +12,8 @@ data/raw/*
 # Notebook checkpoints
 .ipynb_checkpoints/
 data/processed/*
+
+# Models
 models/*
-models/*
+!models/xgboost_churn_model.joblib
+!models/.gitkeep
