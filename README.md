@@ -50,3 +50,36 @@ This platform bridges the gap between machine learning and banking operations by
 [ Tier 1: Critical Capital ]    [ Tier 2: Attrition Risk ]     [ Tier 3: Watchlist / Retained ]
 • Bal ≥ €100k & Prob ≥ 50%       • Bal < €100k & Prob ≥ 50%      • Prob < 50%
 • Dedicated Wealth RM Call       • Automated Digital Perks       • Standard Cross-Sell
+
+
+---
+
+## 🔍 Quantitative Risk Drivers & Portfolio Visualizations
+
+### 1. Geographic Capital Concentration & Regional Risk
+German customer accounts hold a disproportionate concentration of at-risk balances compared to accounts in France or Spain.
+
+![Deposit Balance Distribution by Geography](assets/capital_exposure_by_geography.png)
+
+---
+
+### 2. The Product Saturation Cliff
+Holding two bank products provides peak account stability (~7.6% attrition). Exceeding this threshold to 3 or 4 products causes churn to spike past 80%, highlighting cross-selling friction and bundle dissatisfaction.
+
+![Product Saturation Risk Cliff](assets/product_saturation_cliff.png)
+
+---
+
+### 3. Demographic Flight Velocity (Peak Age Transition)
+KDE distribution indicates peak attrition occurs sharply in the 45–60 age window, representing high-net-worth customers transitioning balances during retirement or estate planning.
+
+![Age Demographic Risk](assets/age_demographic_risk.png)
+
+---
+
+### 4. Global Feature Importance & Production Model Benchmark
+
+<p align="center">
+  <img src="assets/feature_importance.png" width="48%" />
+  <img src="assets/model_evaluation_metrics.png" width="48%" />
+</p>
