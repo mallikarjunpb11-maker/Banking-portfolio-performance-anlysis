@@ -2,7 +2,7 @@
 ### *An End-to-End Decision Intelligence System for Deposit Preservation, Cost-Sensitive ML Scoring, and Relationship Triage*
 
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
-[![XGBoost](https://img.shields.io/badge/Model-XGBoost%20Classifier-green.svg)](https://xgboost.readthedocs.io/)
+[![XGBoost](https://img.shields.io/badge/Model-XGBoost-117554?logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io/)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://banking-portfolio-performance-anlysis-k2hz7agp9ubgbfyvinmtz4.streamlit.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
