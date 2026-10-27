@@ -1,4 +1,4 @@
-# 🏛️ Retail Banking Portfolio Intelligence & Capital Retention Platform
+# Retail Bank Customer Churn Case Study
 ### *An End-to-End Decision Intelligence System for Deposit Preservation, Cost-Sensitive ML Scoring, and Relationship Triage*
 
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
@@ -10,13 +10,13 @@
 
 ## 📌 Executive Summary & Financial Impact
 
-In commercial retail banking, unmanaged deposit attrition silently erodes net interest margins (NIM) and requires expensive capital replacement. Traditional churn prediction systems suffer from a critical flaw: they optimize for unweighted classification accuracy, failing to prioritize high-net-worth accounts that constitute the bulk of capital exposure.
+In retail banking, unmanaged deposit attrition silently erodes net interest margins (NIM) and requires expensive capital replacement. Traditional churn prediction systems suffer from a critical flaw: they optimize for unweighted classification accuracy, failing to prioritize high-net-worth accounts that constitute the bulk of capital exposure.
 
 This platform bridges the gap between machine learning and banking operations by implementing an **end-to-end, cost-sensitive attrition mitigation pipeline**. It pairs an optimized gradient-boosted classifier with a dynamic retention engine that evaluates composite risk (attrition likelihood $\times$ balance exposure) to route high-risk accounts to prioritized operational queues.
 
 ### 🎯 Key Performance Indicators (Test Cohort Evaluation)
 
-| Metric | Baseline Linear Benchmark | Production XGBoost Engine | Operational Lift |
+| Metric | Baseline Linear Benchmark | XGBoost Model | Operational Lift |
 | :--- | :---: | :---: | :---: |
 | **Capital Captured at Risk** | €13.21M (36.0%) | **€27.83M (75.81%)** | **+€14.62M Protected (+110%)** |
 | **Attrition Capture Rate (Recall)** | 36.00% | **74.69% (304 / 407 Churners)** | **+38.69% Detection Lift** |
@@ -84,3 +84,21 @@ KDE distribution indicates peak attrition occurs sharply in the 45–60 age wind
   <img src="assets/feature_importance.png" width="48%" />
   <img src="assets/model_evaluation_metrics.png" width="48%" />
 </p>
+
+---
+
+## 📝 Data & Method
+- Dataset: public Kaggle "Bank Customer Churn" data (10,000 customers; France, Germany, Spain). Not real bank data.
+- Split: 60% train / 20% validation / 20% test.
+- Threshold chosen on validation data; test set used once for final results.
+
+## 💰 ROI Assumptions
+- Retention success rate: 20%
+- Net interest margin: 3%
+- Cost per contact: €50 (Tier 1), €2 (Tier 2)
+- Formula: ROI = (saved balance × margin) − campaign cost
+
+## ⚠️ Limitations
+- Data is public and likely synthetic, so patterns (e.g. churn spike at 3+ products) may not match real banks.
+- Findings show correlation, not cause.
+- Age-group explanations are hypotheses, not tested.
