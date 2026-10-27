@@ -50,6 +50,7 @@ This platform bridges the gap between machine learning and banking operations by
 [ Tier 1: Critical Capital ]    [ Tier 2: Attrition Risk ]     [ Tier 3: Watchlist / Retained ]
 • Bal ≥ €100k & Prob ≥ 50%       • Bal < €100k & Prob ≥ 50%      • Prob < 50%
 • Dedicated Wealth RM Call       • Automated Digital Perks       • Standard Cross-Sell
+```
 
 
 ---
