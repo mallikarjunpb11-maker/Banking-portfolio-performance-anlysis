@@ -12,3 +12,5 @@ data/raw/*
 # Notebook checkpoints
 .ipynb_checkpoints/
 data/processed/*
+models/*
+models/*
