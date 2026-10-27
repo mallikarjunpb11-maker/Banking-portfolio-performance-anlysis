@@ -92,11 +92,12 @@ KDE distribution indicates peak attrition occurs sharply in the 45–60 age wind
 - Split: 60% train / 20% validation / 20% test.
 - Threshold chosen on validation data; test set used once for final results.
 
-## 💰 ROI Assumptions
-- Retention success rate: 20%
-- Net interest margin: 3%
-- Cost per contact: €50 (Tier 1), €2 (Tier 2)
-- Formula: ROI = (saved balance × margin) − campaign cost
+## 💰 ROI Assumptions (as implemented in app.py)
+- Retention success rate: 20% (adjustable, 5–50%)
+- Cost per contact: €75 (adjustable, €10–500), applied to all 583 flagged clients
+- Preserved capital = captured at-risk balance × success rate
+- ROI ratio = preserved capital ÷ campaign cost
+- Note: ROI counts full deposit balance as value, not interest margin, so it overstates profit.
 
 ## ⚠️ Limitations
 - Data is public and likely synthetic, so patterns (e.g. churn spike at 3+ products) may not match real banks.
